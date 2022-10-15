@@ -1,14 +1,6 @@
-import axios from 'axios'
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const DeployableList = ({types, setTypeSelected, setpages}) => {
-
-  useEffect(() => {
-    const URL = ''
-    axios.get(URL)
-      .then(res => res.data)
-      .catch(err => console.log(err))
-  }, [])
   
   const handleSelect = event => {
     if (event.target.value!='all'){
