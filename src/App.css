@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, #light{
+    --red: rgb(255, 0, 0);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    background-color: var(--white);
+}
+body, #dark{
+    --red: rgb(1, 92, 24);
+    --white: rgb(0, 0, 0);
+    --black: rgb(255, 255, 255);
+    background-color: var(--white);
+}
+.App{
+    color: var(--black);
+    min-height: 100vh;
+    position: relative;
+}
+.App_tittle{
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    padding: 3vh 0;
+}
+.App_tittle img{
+    width: 80vw;
+    height: auto;
+    max-height: 20vh;
+    max-width: 60vw;
+}
+.handleColor{
+    position: fixed;
+    bottom: 11vh;
+    right: 1vw;
+    z-index: 1;
+    font-size: 3vh;
+    background-color: var(--white);
+    border: var(--black) 0.5vh solid;
+    padding: 1vh;
+    border-radius: 50%;
+}
+.general_footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--red);
+    height: 10vh;
+}
+.general_footer_middle{
+    margin: 2vh 0;
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.general_footer_middle div:last-child{
+    transform: scale(0.5);
+}
+.general_footer_middle_circle{
+    background-color: rgb(255, 255, 255);
+    width: 10vh;
+    height: 10vh;
+    box-shadow: rgb(0, 0, 0) 0 0px 0.5vh 0.5vh;
+    border-radius: 50%;
+    position: absolute;
+}
