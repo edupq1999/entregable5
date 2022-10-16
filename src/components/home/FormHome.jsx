@@ -21,8 +21,16 @@ const FormHome = () => {
       <input
         className='home_input' 
         type="text" 
-        placeholder='Enter your name.'/>
-      <button className='home_button'>Catch them all!</button>
+        placeholder='Enter your name.'
+        required/>
+      <div className='home_buttons'>
+        <button className='home_button'></button>
+        <button className='home_button'></button>
+        <button className='home_button'></button>
+        <button className='home_button'></button>
+        <button className='home_button'></button>
+        <button className='home_button'></button>
+      </div>
     </form>
   )
 }
