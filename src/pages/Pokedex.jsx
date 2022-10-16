@@ -6,6 +6,7 @@ import CardPoke from '../components/pokedex/CardPoke'
 import TextInput from '../components/pokedex/TextInput'
 import BackButton from '../components/pokedex/BackButton'
 import NextButton from '../components/pokedex/NextButton'
+import './styles/pokedex.css'
 
 const Pokedex = () => {
 
@@ -56,23 +57,25 @@ const Pokedex = () => {
         setTypeSelected = {setTypeSelected}
         setpages = {setpages}
       />
-      {
-        typeSelected === 'All'
-        ?
-        pokemonData?.map(pokemon => (
-          <CardPoke 
-            key = {pokemon.url}
-            url = {pokemon.url}
-          />
-        ))
-        :
-        pokemonData?.slice(pages-20,pages).map(pokemon => (
-          <CardPoke
-            key = {pokemon.pokemon?.url}
-            url = {pokemon.pokemon?.url}
-          />
-        ))
-      }
+      <section className='pokemon_list'>
+        {
+          typeSelected === 'All'
+          ?
+          pokemonData?.map(pokemon => (
+            <CardPoke 
+              key = {pokemon.url}
+              url = {pokemon.url}
+            />
+          ))
+          :
+          pokemonData?.slice(pages-20,pages).map(pokemon => (
+            <CardPoke
+              key = {pokemon.pokemon?.url}
+              url = {pokemon.pokemon?.url}
+            />
+          ))
+        }
+      </section>
       <BackButton 
         setpages = {setpages}
         pages = {pages}

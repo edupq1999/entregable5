@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import './styles/cardPoke.css'
 
 const PokemonList = ({url, typeSelected}) => {
 
@@ -21,21 +22,24 @@ const PokemonList = ({url, typeSelected}) => {
   }
 
   return (
-    <article onClick={handleClick}>
-        <header>
+    <article className='card' onClick={handleClick}>
+        <header className='card_tittle'>
           <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
+          <h3 className=''>{pokemon?.name}</h3>
         </header>
-        <section>
-          <h3>{pokemon?.name}</h3>
+        <section className='card_more_info'>
+          <ul className='card_types'>
+            <span>Types: </span>
           {
             pokemon?.types.map(type => (
-              <p key={type.slot}>{type.type.name}</p>
+              <li key={type.slot} className='card_type'>{type.type.name}</li>
             ))
           }
-          <ul>
+          </ul>
+          <ul className='card_stats'>
             {
               pokemon?.stats.map(stat => (
-                <p key={stat.stat.name}>{stat.stat.name}: {stat.base_stat}</p>
+                <li key={stat.stat.name} className='card_stat'><span className='card_stat_name'>{stat.stat.name}: </span>{stat.base_stat}</li>
               ))
             }
           </ul>
