@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/deployableList.css'
 
 const DeployableList = ({types, setTypeSelected, setpages}) => {
   
@@ -11,8 +12,8 @@ const DeployableList = ({types, setTypeSelected, setpages}) => {
     setpages(20)
   }
   return (
-    <select name="type" id="type" onChange={handleSelect}>
-        <option value='all'>All types</option>
+    <select className='deployable' name="type" id="type" onChange={handleSelect}>
+        <option  value='all'>All types</option>
         {
           types?.map(type => (
             <option 

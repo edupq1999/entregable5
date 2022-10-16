@@ -53,12 +53,14 @@ const Pokedex = () => {
       <header className='pokedex'>
         <p>Welcome <span>{userName}</span>. here you can find your favorite pokemon.</p>
       </header>
-      <TextInput />
-      <DeployableList 
-        types = {types}
-        setTypeSelected = {setTypeSelected}
-        setpages = {setpages}
-      />
+      <nav className='navbar'>
+        <TextInput />
+        <DeployableList 
+          types = {types}
+          setTypeSelected = {setTypeSelected}
+          setpages = {setpages}
+        />
+      </nav>
       <section className='pokemon_list'>
         {
           typeSelected === 'All'
@@ -78,6 +80,7 @@ const Pokedex = () => {
           ))
         }
       </section>
+      
       <BackButton 
         setpages = {setpages}
         pages = {pages}

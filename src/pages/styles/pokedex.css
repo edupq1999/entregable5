@@ -17,3 +17,9 @@
     color: var(--red);
     font-weight: bold;
 }
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+}

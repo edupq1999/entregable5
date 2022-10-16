@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import './styles/textInput.css'
 
 const TextInput = () => {
 
@@ -13,7 +14,13 @@ const TextInput = () => {
   return (
     <form className='search' onSubmit={submit}>
         <input id='search' className='search_input' type="text" placeholder='Enter pokemon name'/>
-        <button className='search_button'>Search</button>
+        <div className='search_buttons'>
+          <button className='search_button'></button>
+          <button className='search_button'></button>
+          <button className='search_button'></button>
+          <button className='search_button'></button>
+          <button className='search_button'></button>
+        </div>
     </form>
   )
 }
