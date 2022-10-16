@@ -5,3 +5,15 @@
     justify-content: center;
     margin-bottom: 10vh;
 }
+.pokedex{
+    padding-top: 30vh;
+    width: 80%;
+    margin: auto;
+}
+.pokedex p{
+    text-align: center;
+}
+.pokedex span{
+    color: var(--red);
+    font-weight: bold;
+}

@@ -7,6 +7,7 @@ import TextInput from '../components/pokedex/TextInput'
 import BackButton from '../components/pokedex/BackButton'
 import NextButton from '../components/pokedex/NextButton'
 import './styles/pokedex.css'
+import { Navigate } from 'react-router-dom'
 
 const Pokedex = () => {
 
@@ -46,9 +47,10 @@ const Pokedex = () => {
   }, [typeSelected, pages])
 
   return (
+    userName 
+    ?
     <div>
-      <header>
-        <h1>Pokedex</h1>
+      <header className='pokedex'>
         <p>Welcome <span>{userName}</span>. here you can find your favorite pokemon.</p>
       </header>
       <TextInput />
@@ -86,6 +88,8 @@ const Pokedex = () => {
         limit = {limit}
       />
     </div>
+    :
+    <Navigate to={'/'}/>
   )
 }
 
