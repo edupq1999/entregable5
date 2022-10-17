@@ -1,0 +1,12 @@
+.back{
+    position: fixed;
+    top: 29.5vh;
+    right: 3vw;
+    z-index: 2;
+}
+.button{
+    fill: var(--red);
+    cursor: pointer;
+    background-color: var(--white);
+    border-radius: 50%;
+}

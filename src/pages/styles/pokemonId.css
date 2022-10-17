@@ -1,0 +1,184 @@
+.pokemonId{
+    padding: 25vh 0;
+}
+.pokemonId_Card{
+    border: 2px var(--black) solid;
+    border-radius: 30px;
+    width: 80%;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+}
+.pokemonId_name,
+.types span,
+.abilities span,
+.stats span{
+    text-transform: capitalize;
+}
+.pokemonId_Card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.596) 1px 1px 3px 2px;
+}
+.pokemonId_img{
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 3vh;
+    border: var(--black) 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.596) 1px 1px 3px 2px;
+}
+.pokemonId_img:hover{
+    scale: 1.1;
+    transition: 1s;
+}
+.pokemonId_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.types{
+    display: flex;
+}
+.types span{
+    margin: 0 20px;
+    width: 60px;
+    height: 28px;
+    background-size: cover;
+    background-position: center;
+}
+.characterist span{
+    font-weight: bold;
+}
+.stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+.stats_title{
+    grid-column: 1/4;
+}
+.abilities span{
+    margin: 0 20px 0 0;
+}
+img#normal{
+    background-image: var(--normalBackground);
+}
+span#normal{
+    background-image: var(--normalType)
+}
+img#fighting{
+    background-image: var(--fightingBackground);
+}
+span#fighting{
+    background-image: var(--fightingType)
+}
+img#flying{
+    background-image: var(--flyingBackground);
+}
+span#flying{
+    background-image: var(--flyingType)
+}
+img#poison{
+    background-image: var(--poisonBackground);
+}
+span#poison{
+    background-image: var(--poisonType)
+}
+img#ground{
+    background-image: var(--groundBackground);
+}
+span#ground{
+    background-image: var(--groundType)
+}
+img#bug{
+      background-image: var(--bugBackground);
+}
+span#bug{
+    background-image: var(--bugType)
+}
+img#rock{
+    background-image: var(--rockBackground);
+}
+span#rock{
+    background-image: var(--rockType)
+}
+img#ghost{
+    background-image: var(--ghostBackground);
+}
+span#ghost{
+    background-image: var(--ghostType)
+}
+img#steel{
+    background-image: var(--steelBackground);
+}
+span#steel{
+    background-image: var(--steelType)
+}
+img#fire{
+    background-image: var(--fireBackground);
+}
+span#fire{
+    background-image: var(--fireType)
+}
+img#water{
+    background-image: var(--waterBackground);
+}
+span#water{
+    background-image: var(--waterType)
+}
+img#grass{
+    background-image: var(--grassBackground);
+}
+span#grass{
+    background-image: var(--grassType)
+}
+img#electric{
+    background-image: var(--electricBackground);
+}
+span#electric{
+    background-image: var(--electricType)
+}
+img#psychic{
+    background-image: var(--psychicBackground);
+}
+span#psychic{
+    background-image: var(--psychicType)
+}
+img#ice{
+    background-image: var(--iceBackground);
+}
+span#ice{
+    background-image: var(--iceType)
+}
+img#dragon{
+    background-image: var(--dragonBackground);
+}
+span#dragon{
+    background-image: var(--dragonType)
+}
+img#dark{
+    background-image: var(--darkBackground);
+}
+span#dark{
+    background-image: var(--darkType)
+}
+img#fairy{
+    background-image: var(--fairyBackground);
+}
+span#fairy{
+    background-image: var(--fairyType)
+}
+img#shadow{
+    background-image: var(--shadowBackground);
+}
+span#shadow{
+    background-image: var(--shadowType)
+}
+img#unknow{
+    background-image: var(--unknowBackground);
+  }
+span#unknow{
+    background-image: var(--unknowType)
+}

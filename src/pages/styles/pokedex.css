@@ -12,6 +12,7 @@
 }
 .pokedex p{
     text-align: center;
+    font-size: 30px;
 }
 .pokedex span{
     color: var(--red);

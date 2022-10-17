@@ -1,0 +1,6 @@
+.next{
+    position: fixed;
+    top: 38vh;
+    right: 3vw;
+    z-index: 2;
+}
