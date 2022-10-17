@@ -8,14 +8,14 @@ import ProtectedRoutes from './pages/ProtectedRoutes'
 
 function App() {
 
-  const [color, setColor] = useState('light')
+  const [color, setColor] = useState('light-mode')
 
   const toggle = () => {
-    color === 'light'
+    color === 'light-mode'
     ?
-    setColor('dark')
+    setColor('dark-mode')
     :
-    setColor('light')
+    setColor('light-mode')
   }
 
   return (
@@ -32,7 +32,7 @@ function App() {
       </Routes>
       <div className='handleColor' onClick={toggle}>
         {
-          color === 'light'
+          color === 'light-mode'
           ?
           '🌑'
           :

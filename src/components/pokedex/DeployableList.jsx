@@ -13,10 +13,11 @@ const DeployableList = ({types, setTypeSelected, setpages}) => {
   }
   return (
     <select className='deployable' name="type" id="type" onChange={handleSelect}>
-        <option  value='all'>All types</option>
+        <option className='deployable_option' value='all'>All types</option>
         {
           types?.map(type => (
             <option 
+              className='deployable_option'
               key={type.name}
               id={type.name}
               value={type.name}

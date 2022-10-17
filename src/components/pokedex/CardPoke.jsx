@@ -23,16 +23,16 @@ const PokemonList = ({url, typeSelected}) => {
 
   return (
     <article className='card' onClick={handleClick}>
-        <header className='card_tittle'>
+        <header className='card_tittle' id={pokemon?.types[0].type.name}>
           <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
-          <h3 className=''>{pokemon?.name}</h3>
+          <h3 className='card_tittle_name'>{pokemon?.name}</h3>
         </header>
         <section className='card_more_info'>
           <ul className='card_types'>
             <span>Types: </span>
           {
             pokemon?.types.map(type => (
-              <li key={type.slot} className='card_type'>{type.type.name}</li>
+              <li key={type.slot} className='card_type' id={type.type.name}></li>
             ))
           }
           </ul>

@@ -3,9 +3,12 @@
     border-radius: 8px;
     background-color: var(--red);
     color: var(--black);
-    
 }
 .deployable:hover{
     scale: 1.1;
     transition: 0.5;
+}
+.deployable_option{
+    background-color: var(--red);
+    text-align: center;
 }
