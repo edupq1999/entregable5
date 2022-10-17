@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
-    margin-bottom: 10vh;
+    padding-bottom: 20vh;
 }
 .pokedex{
     padding-top: 30vh;
