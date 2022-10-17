@@ -47,12 +47,14 @@ body, #light-mode{
     --shadowType: url(https://logos.flamingtext.com/Name-Logos/Shadow-design-china-name.png);
     --unknowBackground: url(https://wallpaperaccess.com/full/2902935.jpg);
     --unknowType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15321_Pokemon_Mystery_Type.png);
+    transition: 1s;
     background-color: var(--white);
 }
 body, #dark-mode{
     --red: rgb(1, 92, 24);
     --white: rgb(0, 0, 0);
     --black: rgb(255, 255, 255);
+    transition: 1s;
     background-color: var(--white);
 }
 ul{
@@ -73,29 +75,21 @@ ul{
     align-items: center;
     justify-content: center;
     z-index: 1;
+    transition: 1s;
 }
 .App_tittle img{
     height: 10vh;
     max-width: 45vw;
     min-width: 300px;
 }
-.handleColor{
-    position: fixed;
-    top: 22vh;
-    right: 3vw;
-    z-index: 1;
-    font-size: 3vh;
-    background-color: var(--white);
-    border: var(--black) 0.5vh solid;
-    padding: 1vh;
-    border-radius: 50%;
-}
-.handleColor:hover{
-    transition: 0.5s;
-    translate: 0 -0.5vh;
-    box-shadow: var(--red) 0 0 0.5vh 0.5vh;
+.toggle{
+    top: 21vh;
+    font-size: 30px;
+    padding: 2px;
+    border: 3px var(--red) solid;
 }
 .general_footer{
+    transition: 1s;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -123,4 +117,26 @@ ul{
     box-shadow: rgb(0, 0, 0) 0 0px 0.5vh 0.5vh;
     border-radius: 50%;
     position: absolute;
+}
+.button{
+    position: fixed;
+    right: 3vh;
+    cursor: pointer;
+    fill: var(--red);
+    background-color: var(--white);
+    border-radius: 50%;
+    z-index: 2;
+    display: inline-block;
+    vertical-align: middle;
+    display: grid;
+    place-items: center;
+}
+.button:hover{
+    transition: 0.5s;
+    translate: 0 -0.5vh;
+    box-shadow: var(--red) 0 0 0.5vh 0.5vh;
+}
+.back_page{
+    top: 30vh;
+    border: var(--red) solid 3px;
 }
