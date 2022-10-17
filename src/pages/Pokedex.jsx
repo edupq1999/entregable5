@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import DeployableList from '../components/pokedex/DeployableList'
 import CardPoke from '../components/pokedex/CardPoke'
 import TextInput from '../components/pokedex/TextInput'
+import SuggestedList from '../components/pokedex/SuggestedList.jsx'
 import BackButton from '../components/pokedex/BackButton'
 import NextButton from '../components/pokedex/NextButton'
 import './styles/pokedex.css'
@@ -16,6 +17,7 @@ const Pokedex = () => {
   const [typeSelected, setTypeSelected] = useState('All')
   const [pages, setpages] = useState(20)
   const [limit, setLimit] = useState()
+  const [suggestedPokemon, setSuggestedPokemon] = useState()
 
   const userName = useSelector(state => state.userName)
 
@@ -54,7 +56,10 @@ const Pokedex = () => {
         <p>Welcome <span>{userName}</span>. here you can find your favorite pokemon.</p>
       </header>
       <nav className='navbar'>
-        <TextInput />
+        <div className='input_bar'>
+          <TextInput setSuggestedPokemon = {setSuggestedPokemon}/>
+          <SuggestedList suggestedPokemon = {suggestedPokemon}/>
+        </div>
         <DeployableList 
           types = {types}
           setTypeSelected = {setTypeSelected}
