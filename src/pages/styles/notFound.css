@@ -1,0 +1,39 @@
+a{
+    text-decoration: none;
+}
+.notFound{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding-top: 30vh;
+}
+.notFound_tittle{
+    width: 80%;
+    text-align: center;
+}
+.notFound_img{
+    width: 20px;
+}
+.notFound_message{
+    font-size: 30px;
+}
+.notFound_button{
+    color: var(--red);
+    background-color: var(--white);
+    border: 2px solid var(--red);
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.notFound_button:hover{
+    translate: 0 -5px;
+    box-shadow: var(--red) 0 0 5px 2px;
+    font-weight: bold;
+    transition: 0.5s;
+}

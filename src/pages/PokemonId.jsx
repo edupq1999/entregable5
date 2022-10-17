@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import NotFound from './NotFound'
 import './styles/pokemonId.css'
 
 const PokemonId = () => {
@@ -18,6 +19,7 @@ const PokemonId = () => {
   }, [])
   console.log(pokemon)
 
+  if (pokemon){
   return (
     <div className='pokemonId'>
       <div className='pokemonId_Card'>
@@ -57,6 +59,9 @@ const PokemonId = () => {
       </div>
     </div>
   )
+  }else {
+    return <NotFound />
+  }
 }
 
 export default PokemonId
