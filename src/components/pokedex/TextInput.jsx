@@ -11,7 +11,9 @@ const TextInput = ({setSuggestedPokemon}) => {
     navigate(`/pokedex/${event.target.search.value.trim().toLowerCase()}`)
   }
   const suggestedPokemon = e => {
-    if(e.target.value !== ''){
+    if(e.target.value === ''){
+      setSuggestedPokemon()
+    }else{
       setSuggestedPokemon(e.target.value)
     }
   }

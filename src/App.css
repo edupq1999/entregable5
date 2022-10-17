@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body, #light-mode{
     --red: rgb(255, 0, 0);
@@ -120,7 +123,7 @@ ul{
 }
 .button{
     position: fixed;
-    right: 3vh;
+    right: 3vw;
     cursor: pointer;
     fill: var(--red);
     background-color: var(--white);

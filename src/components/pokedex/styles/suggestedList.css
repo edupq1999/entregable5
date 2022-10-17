@@ -1,0 +1,23 @@
+li{
+    list-style: none;
+}
+.suggestedList{
+    position: absolute;
+    margin: 40px 0 20px 30px;
+    width: 100%;
+    
+}
+.suggested_Pokemon{
+    text-transform: capitalize;
+    
+    cursor: pointer;
+    padding: 3px 3px 3px 8px;
+    margin: 4px 0;
+    background-color: var(--red);
+    color: #fff;
+    border-radius: 30px;
+}
+.suggested_Pokemon:hover{
+    transition: 0.5s;
+    translate: 5px 
+}

@@ -57,6 +57,16 @@ const PokemonId = () => {
             </div>
           </div>
       </div>
+      <section className='moves'>
+        <h1 className='move_title'>Moves</h1>
+        <ul className='move_list'>
+          {
+            pokemon?.moves.map(move => (
+              <li className='move_name' key={move.move.name}>{move.move.name}</li>
+            ))
+          }
+        </ul>
+      </section>
     </div>
   )
   }else {

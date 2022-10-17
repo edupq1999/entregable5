@@ -22,7 +22,7 @@
     box-shadow: rgba(0, 0, 0, 0.596) 1px 1px 3px 2px;
 }
 .pokemonId_img{
-    width: 300px;
+    width: 280px;
     background-position: center;
     background-size: cover;
     border-radius: 3vh;
@@ -34,6 +34,7 @@
     transition: 1s;
 }
 .pokemonId_info{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,6 +62,43 @@
 }
 .abilities span{
     margin: 0 20px 0 0;
+}
+.moves{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    min-width: 300px;
+    margin: 30px auto;
+    border: var(--black) 2px solid;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.596) 1px 1px 3px 2px;
+}
+.move_title{
+    margin: 25px 0;
+    font-size: 35px;
+}
+.move_list{
+    display: flex;
+    flex-wrap: wrap;
+    grid-auto-columns: auto;
+    gap: 1em;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.move_name{
+    margin: 0 10px;
+    padding-left: 5px;
+    background-color: var(--red);
+    padding: 10px;
+    border-radius: 20px;
+}
+.move_name:hover{
+    font-weight: bold;
+    scale: 1.1;
+    color: #fff;
+    transition: 0.5s;
 }
 img#normal{
     background-image: var(--normalBackground);

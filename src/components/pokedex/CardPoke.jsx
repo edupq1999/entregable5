@@ -30,11 +30,11 @@ const PokemonList = ({url, typeSelected}) => {
         <section className='card_more_info'>
           <ul className='card_types'>
             <span>Types: </span>
-          {
-            pokemon?.types.map(type => (
-              <li key={type.slot} className='card_type' id={type.type.name}></li>
-            ))
-          }
+            {
+              pokemon?.types.map(type => (
+                <li key={type.slot} className='card_type' id={type.type.name}></li>
+              ))
+            }
           </ul>
           <ul className='card_stats'>
             {
