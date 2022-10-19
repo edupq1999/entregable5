@@ -1,0 +1,11 @@
+.pages{
+    padding-bottom: 15vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.page{
+    margin: 5px 12px;
+}

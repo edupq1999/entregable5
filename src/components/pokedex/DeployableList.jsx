@@ -9,7 +9,7 @@ const DeployableList = ({types, setTypeSelected, setpages}) => {
     }else{
       setTypeSelected('All')
     }
-    setpages(20)
+    setpages(0)
   }
   return (
     <select className='deployable' name="type" id="type" onChange={handleSelect}>

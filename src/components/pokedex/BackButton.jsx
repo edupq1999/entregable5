@@ -3,7 +3,7 @@ import './styles/backButton.css'
 
 const BackButton = ({setpages, pages}) => {
     const handlePage = () => {
-        if (pages>20){
+        if (pages>0){
             setpages(pages-20)
         }
     }
