@@ -49,3 +49,7 @@
     transition: 0.5s;
     box-shadow: var(--red) 0 0 2px 2px;
 }
+@media (max-width: 460px){
+.search_input{
+    margin: 0 20px 0 -20px;
+}  

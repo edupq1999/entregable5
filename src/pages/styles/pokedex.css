@@ -28,3 +28,8 @@
     position: relative;
     display: grid;
 }
+@media (max-width: 460px){
+.navbar{
+    flex-direction: column;
+}   
+}
