@@ -8,4 +8,7 @@
 }
 .page{
     margin: 5px 12px;
+    cursor: pointer;
+    color: var(--black);
+    font-weight: bold;
 }

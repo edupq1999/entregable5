@@ -9,7 +9,7 @@ import BackButton from '../components/pokedex/BackButton'
 import NextButton from '../components/pokedex/NextButton'
 import './styles/pokedex.css'
 import { Navigate } from 'react-router-dom'
-import Pages from '../components/pokedex/pages'
+import Pages from '../components/pokedex/Pages'
 
 const Pokedex = () => {
 
