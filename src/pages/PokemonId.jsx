@@ -23,7 +23,12 @@ const PokemonId = () => {
   return (
     <div className='pokemonId'>
       <div className='pokemonId_Card'>
-          <img className='pokemonId_img' id={pokemon?.types[0].type.name} src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
+          {pokemon?.sprites.other['official-artwork'].front_default
+          ?
+          <img className='pokemonId_img' id={pokemon?.types[0].type.name} src={pokemon?.sprites.other['official-artwork'].front_default} alt="poke_img" />
+          :
+          <img className='pokemonId_img' id={pokemon?.types[0].type.name} src='https://i.ytimg.com/vi/TstLQXSbzvI/hqdefault.jpg' alt="poke_img" />
+          }
           <div className='pokemonId_info'>
             <h1 className='pokemonId_name'>{pokemon?.name}</h1>
             <div className='types'>
@@ -44,8 +49,8 @@ const PokemonId = () => {
             </div>
             <section className='characterist'>
               <h3 className='characterist_title'>Characterist:</h3>
-              <p>Height: <span>{pokemon?.height}0 </span>cm</p>
-              <p>Weight: <span>{pokemon?.weight}00 </span>g</p>
+              <p>Height: <span>{pokemon?.height/10} </span>m</p>
+              <p>Weight: <span>{pokemon?.weight/100} </span>kg</p>
             </section>
             <div className='stats'>
               <h3 className='stats_title'>Stats:</h3>
