@@ -18,6 +18,7 @@ const Pokedex = () => {
   const [pages, setpages] = useState(0)
   const [limit, setLimit] = useState()
   const [suggestedPokemon, setSuggestedPokemon] = useState()
+  const [countP, setcountP] = useState(0)
 
   const userName = useSelector(state => state.userName)
 
@@ -35,6 +36,8 @@ const Pokedex = () => {
         .then(res => {
           setPokemonData(res.data.results)
           setLimit(res.data.count)
+          setcountP(res.data.count/20)
+          console.log(countP)
         })
         .catch(err => console.log(err))
     }else{
@@ -43,6 +46,8 @@ const Pokedex = () => {
         .then(res => {
           setPokemonData(res.data.pokemon)
           setLimit(res.data.pokemon.length)
+          setcountP(res.data.pokemon.length/20)
+          console.log(countP)
         })
         .catch(err => console.log(err))
     }

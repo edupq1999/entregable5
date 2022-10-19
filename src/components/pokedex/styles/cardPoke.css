@@ -21,9 +21,12 @@
     flex-direction: column;
     align-items: center;
     border-radius: 15px 15px 0 0;
+    width: 280px;
+    min-height: 344px;
     background-size: cover;
     background-position: center;
     border-bottom: 2px var(--black) solid;
+    justify-content: space-between;
 }
 .card_tittle img{
     width: 280px;
@@ -57,6 +60,10 @@
 }
 .card_stat{
     margin: 10px 10px;
+}
+#poke_unknow{
+    border-radius: 15px;
+    margin: auto;
 }
 header#normal{
   background-image: var(--normalBackground);

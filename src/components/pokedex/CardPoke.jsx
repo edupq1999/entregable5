@@ -24,8 +24,14 @@ const PokemonList = ({url, typeSelected}) => {
   return (
     <article className='card' onClick={handleClick}>
         <header className='card_tittle' id={pokemon?.types[0].type.name}>
-          <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
-          <h3 className='card_tittle_name'>{pokemon?.name}</h3>
+        {
+          pokemon?.sprites.other['official-artwork'].front_default
+          ?
+          <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="pokemon_img" />
+          :
+          <img src='https://i.ytimg.com/vi/TstLQXSbzvI/hqdefault.jpg' id='poke_unknow' alt="pokemon_img" />
+        }
+        <h3 className='card_tittle_name'>{pokemon?.name}</h3>
         </header>
         <section className='card_more_info'>
           <ul className='card_types'>
