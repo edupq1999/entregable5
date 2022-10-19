@@ -20,6 +20,7 @@ const Pokedex = () => {
   const [limit, setLimit] = useState()
   const [suggestedPokemon, setSuggestedPokemon] = useState()
   const [countPages, setcountPages] = useState(0)
+  const [array, setArray] = useState([])
 
   const userName = useSelector(state => state.userName)
 
@@ -51,6 +52,14 @@ const Pokedex = () => {
         .catch(err => console.log(err))
     }
   }, [typeSelected, pages])
+
+  useEffect(() => {
+      let array = []
+      for (let i = 1; i<=Math.ceil(countPages); i++){
+          array.push(i)
+      }
+      setArray(array)
+  }, [countPages])
 
   return (
     userName 
@@ -100,9 +109,9 @@ const Pokedex = () => {
         limit = {limit}
       />
       <Pages 
-        countPages = {countPages}
         setpages = {setpages}
-        typeSelected = {typeSelected}
+        array = {array}
+        setArray = {setArray}
       />
     </div>
     :

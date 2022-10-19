@@ -4,7 +4,7 @@ import '../../App.css'
 
 const NextButton = ({setpages, pages, limit}) => {
     const handlePage = () => {
-        if (pages<limit){
+        if (pages<limit-20){
             setpages(pages+20)
         }
     }

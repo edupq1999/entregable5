@@ -1,15 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './styles/pages.css'
 
-let array = []
-const Pages = ({countPages, setpages, typeSelected}) => {
-    useEffect(() => {
-        array = []
-        for (let i = 1; i<=Math.ceil(countPages); i++){
-            array.push(i)
-        }
-        console.log(array)
-    }, [countPages, typeSelected])
+const Pages = ({setpages, array}) => {
     
     const handlePage = event => {
         setpages(20*event.target.id)
@@ -19,10 +11,10 @@ const Pages = ({countPages, setpages, typeSelected}) => {
         {
             array?.map(number => (
                 <span 
+                    key={number}
                     onClick={handlePage} 
                     className='page'
                     id={number-1}
-                    key={number}
                 >
                     {number}
                 </span>
