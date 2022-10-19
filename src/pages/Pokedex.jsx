@@ -15,7 +15,7 @@ const Pokedex = () => {
   const [pokemonData, setPokemonData] = useState()
   const [types, setTypes] = useState()
   const [typeSelected, setTypeSelected] = useState('All')
-  const [pages, setpages] = useState(20)
+  const [pages, setpages] = useState(0)
   const [limit, setLimit] = useState()
   const [suggestedPokemon, setSuggestedPokemon] = useState()
 
@@ -30,11 +30,11 @@ const Pokedex = () => {
 
   useEffect(() => {
     if (typeSelected==='All'){
-      const URL = `https://pokeapi.co/api/v2/pokemon?limit=${pages}&offset=${pages-20}`
+      const URL = `https://pokeapi.co/api/v2/pokemon?limit=20&offset=${pages}`
       axios.get(URL)
         .then(res => {
           setPokemonData(res.data.results)
-          setLimit(1154)
+          setLimit(res.data.count)
         })
         .catch(err => console.log(err))
     }else{
