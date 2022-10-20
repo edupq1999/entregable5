@@ -22,7 +22,7 @@ const PokemonList = ({url, typeSelected}) => {
   }
 
   return (
-    <article className='card' onClick={handleClick}>
+    <article className='card' id={pokemon?.name} onClick={handleClick}>
         <header className='card_tittle' id={pokemon?.types[0].type.name}>
         {
           pokemon?.sprites.other['official-artwork'].front_default

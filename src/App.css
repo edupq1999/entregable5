@@ -1,64 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
+:root{
+    --normalBackground: url(https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66444.jpg?w=2000);
+    --normalType: url(https://i.pinimg.com/originals/64/e6/84/64e6842383172e8645126c489e1de351.png);
+    --normalColor: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(201, 201, 201) 50%, rgb(161, 161, 161) 100%);
+    --fightingBackground: url(https://img.freepik.com/free-vector/background-boxing-ring-illuminated-sports-area-fighting-dangerous-sport_33099-1023.jpg);
+    --fightingType: url(https://i.pinimg.com/originals/c4/2d/cb/c42dcb0934c2c3f25e7ffdbb6682c8a4.png);
+    --fightingColor: linear-gradient(90deg, rgb(167, 61, 0) 0%, rgb(177, 65, 0) 100%);
+    --flyingBackground: url(https://www.wallpapertip.com/wmimgs/47-479820_blue-sky-clouds-wallpapers-and-images-free-sky.jpg);
+    --flyingType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15329_Pokemon_Flying_Type.png);
+    --flyingColor: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(112,116,252,1) 79%);
+    --poisonBackground: url(https://videohive.img.customer.envatousercontent.com/files/3d8ad659-3465-44f3-ae48-07879474a34f/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=57b3517ff8c7929552dc431443ef550d);
+    --poisonType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15330_Pokemon_Poison_Energy.png);
+    --poisonColor: linear-gradient(90deg, rgba(181,112,252,1) 0%, rgba(113,0,255,1) 79%);
+    --groundBackground: url(https://thumbs.dreamstime.com/b/stony-clay-ground-hot-dry-background-wallpaper-stony-clay-ground-hot-dr-background-wallpaper-122144173.jpg);
+    --groundType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15323_Pokemon_Ground_Type.png);
+    --groundColor: linear-gradient(90deg, rgba(198,180,101,1) 0%, rgba(186,141,45,1) 79%);
+    --bugBackground: url(https://365psd.com/images/istock/previews/9196/91968853-green-leaves-background-eco-organic-seamless-pattern-vector.jpg);
+    --bugType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15335_pokemon_bug_type.png);
+    --bugColor: linear-gradient(90deg, rgba(178,210,81,1) 0%, rgba(127,161,86,1) 79%);
+    --rockBackground: url(https://images.unsplash.com/photo-1610280777476-6be183d4e1b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cm9jayUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
+    --rockType: url(https://i.pinimg.com/originals/c0/73/d6/c073d68f7d521480004bf067eb970aed.png);
+    --rockColor: linear-gradient(90deg, rgba(173,156,79,1) 0%, rgba(166,128,41,1) 79%);
+    --ghostBackground: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/50728ed5-695b-4559-aa6b-91de384a9560/dcnsacl-7b27935c-daf5-4f08-9af3-46978c4cf17e.jpg/v1/fill/w_1024,h_1821,q_75,strp/cloudy_night_sky_by_aspiringdirector_dcnsacl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgyMSIsInBhdGgiOiJcL2ZcLzUwNzI4ZWQ1LTY5NWItNDU1OS1hYTZiLTkxZGUzODRhOTU2MFwvZGNuc2FjbC03YjI3OTM1Yy1kYWY1LTRmMDgtOWFmMy00Njk3OGM0Y2YxN2UuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.P2Cum7GgEkdXT2Itduf3aksMaQzRIzOqewrkraUmYNI);
+    --ghostType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15331_Pokemon_Ghost_Type.png);
+    --ghostColor: linear-gradient(90deg, rgba(123,73,168,1) 0%, rgba(130,86,198,1) 79%);
+    --steelBackground: url(https://img.freepik.com/premium-vector/metal-background-steel-black-design_1078-419.jpg?w=2000);
+    --steelType: url(https://i.pinimg.com/originals/02/d4/44/02d4448150935c6d6c3bc65298dbd5ed.png);
+    --steelColor: linear-gradient(90deg, rgba(200,200,200,1) 0%, rgba(142,142,142,1) 79%);
+    --fireBackground: url(https://cdn.wallpapersafari.com/87/33/rcK6XA.jpg);
+    --fireType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15327_Pokemon_Fire_Type.png);
+    --fireColor: linear-gradient(90deg, rgba(255,211,0,1) 0%, rgba(255,96,0,1) 79%);
+    --waterBackground: url(https://img.freepik.com/free-vector/water-droplets-blue-background_107791-2583.jpg?w=2000);
+    --waterType: url(https://i.pinimg.com/originals/0b/60/11/0b60116bc382b1c62a9fe41a61916828.png);
+    --waterColor: linear-gradient(90deg, rgba(0,144,255,1) 0%, rgba(0,65,232,1) 79%);
+    --grassBackground: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80ff523f-ff84-457d-a547-464588d3a3d3/df0dwcb-c264fc01-23cf-43e7-b42b-2d3a6a6d565c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgwZmY1MjNmLWZmODQtNDU3ZC1hNTQ3LTQ2NDU4OGQzYTNkM1wvZGYwZHdjYi1jMjY0ZmMwMS0yM2NmLTQzZTctYjQyYi0yZDNhNmE2ZDU2NWMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fSXghpSjeaR409VsfrJnq_dl_imCixcDB_0lmEshSis);
+    --grassType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15338_pokemon_grass_type.png);
+    --grassColor: linear-gradient(90deg, rgba(74,204,0,1) 0%, rgba(71,142,0,1) 79%);
+    --electricBackground: url(https://wallpaper.dog/large/5507827.jpg);
+    --electricType: url(https://i.pinimg.com/originals/ae/99/f0/ae99f036a053d152be94b9a825a3c412.png);
+    --electricColor: linear-gradient(90deg, rgba(192,199,57,1) 0%, rgba(242,242,2,1) 79%);
+    --psychicBackground: url(https://wallpapercave.com/wp/wp7678061.png);
+    --psychicType: url(https://i.pinimg.com/originals/8a/ae/6c/8aae6c7e5f6606e2f169621675a4b244.png);
+    --psychicColor: linear-gradient(90deg, rgba(199,57,130,1) 0%, rgba(242,2,206,1) 79%);
+    --iceBackground: url(https://img.freepik.com/premium-photo/natural-texture-winter-ice-blue-ice-as-background_117930-805.jpg?w=2000);
+    --iceType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15326_Pokemon_Ice_Type.png);
+    --iceColor: linear-gradient(90deg, rgba(46,255,255,1) 0%, rgba(0,181,168,1) 79%);
+    --dragonBackground: url(https://cdn.thinkdrawart.com/wp-content/uploads/2012/04/Fantasy-Sky-Step3d.jpg);
+    --dragonType: url(https://i.pinimg.com/originals/30/b7/f7/30b7f7d88eed267412049ba49d2cd532.png);
+    --dragonColor: linear-gradient(90deg, rgba(100,0,245,1) 0%, rgba(98,6,193,1) 79%);
+    --darkBackground: url(https://images.pling.com/img/00/00/61/57/57/1549487/577c4dc30402a8dfa3915867a59e64a89b7b723b9ac219fd677bdd0415563d4f084f.jpg);
+    --darkType: url(https://i.pinimg.com/originals/a2/1c/4a/a21c4a4659cb7c08c4de89c66c4c05f6.png);
+    --darkColor: linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(0,0,0,1) 79%);
+    --fairyBackground: url(https://img.freepik.com/premium-vector/fairy-background-with-rainbow-mesh-trendy-universe-banner-princess-colors-fantasy-gradient-backdrop-with-hologram-holographic-fairy-background-with-magic-sparkles-stars-blurs_121461-687.jpg?w=2000);
+    --fairyType: url(https://i.pinimg.com/originals/80/18/4b/80184bc7a5688df0b568529579fb4661.png);
+    --fairyColor: linear-gradient(90deg, rgba(236,130,255,1) 0%, rgba(255,162,251,1) 79%);
+    --shadowBackground: url(https://c4.wallpaperflare.com/wallpaper/1017/23/708/gray-black-shadow-surface-wallpaper-thumb.jpg);
+    --unknowBackground: url(https://wallpaperaccess.com/full/2902935.jpg);
+}
+#light-mode{
+    --red: rgb(212, 26, 26);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    background-color: var(--white);
+    transition: 1s;
+}
+#dark-mode{
+    --red: rgb(1, 92, 24);
+    --white: rgb(0, 0, 0);
+    --black: rgb(255, 255, 255);
+    background-color: var(--white);
+    transition: 1s;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-body, #light-mode{
-    --red: rgb(255, 0, 0);
-    --black: rgb(0, 0, 0);
-    --white: rgb(255, 255, 255);
-    --normalBackground: url(https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66444.jpg?w=2000);
-    --normalType: url(https://i.pinimg.com/originals/64/e6/84/64e6842383172e8645126c489e1de351.png);
-    --fightingBackground: url(https://img.freepik.com/free-vector/background-boxing-ring-illuminated-sports-area-fighting-dangerous-sport_33099-1023.jpg);
-    --fightingType: url(https://i.pinimg.com/originals/c4/2d/cb/c42dcb0934c2c3f25e7ffdbb6682c8a4.png);
-    --flyingBackground: url(https://www.wallpapertip.com/wmimgs/47-479820_blue-sky-clouds-wallpapers-and-images-free-sky.jpg);
-    --flyingType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15329_Pokemon_Flying_Type.png);
-    --poisonBackground: url(https://videohive.img.customer.envatousercontent.com/files/3d8ad659-3465-44f3-ae48-07879474a34f/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=57b3517ff8c7929552dc431443ef550d);
-    --poisonType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15330_Pokemon_Poison_Energy.png);
-    --groundBackground: url(https://thumbs.dreamstime.com/b/stony-clay-ground-hot-dry-background-wallpaper-stony-clay-ground-hot-dr-background-wallpaper-122144173.jpg);
-    --groundType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15323_Pokemon_Ground_Type.png);
-    --bugBackground: url(https://365psd.com/images/istock/previews/9196/91968853-green-leaves-background-eco-organic-seamless-pattern-vector.jpg);
-    --bugType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15335_pokemon_bug_type.png);
-    --rockBackground: url(https://images.unsplash.com/photo-1610280777476-6be183d4e1b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cm9jayUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);
-    --rockType: url(https://i.pinimg.com/originals/c0/73/d6/c073d68f7d521480004bf067eb970aed.png);
-    --ghostBackground: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/50728ed5-695b-4559-aa6b-91de384a9560/dcnsacl-7b27935c-daf5-4f08-9af3-46978c4cf17e.jpg/v1/fill/w_1024,h_1821,q_75,strp/cloudy_night_sky_by_aspiringdirector_dcnsacl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgyMSIsInBhdGgiOiJcL2ZcLzUwNzI4ZWQ1LTY5NWItNDU1OS1hYTZiLTkxZGUzODRhOTU2MFwvZGNuc2FjbC03YjI3OTM1Yy1kYWY1LTRmMDgtOWFmMy00Njk3OGM0Y2YxN2UuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.P2Cum7GgEkdXT2Itduf3aksMaQzRIzOqewrkraUmYNI);
-    --ghostType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15331_Pokemon_Ghost_Type.png);
-    --steelBackground: url(https://img.freepik.com/premium-vector/metal-background-steel-black-design_1078-419.jpg?w=2000);
-    --steelType: url(https://i.pinimg.com/originals/02/d4/44/02d4448150935c6d6c3bc65298dbd5ed.png);
-    --fireBackground: url(https://cdn.wallpapersafari.com/87/33/rcK6XA.jpg);
-    --fireType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15327_Pokemon_Fire_Type.png);
-    --waterBackground: url(https://img.freepik.com/free-vector/water-droplets-blue-background_107791-2583.jpg?w=2000);
-    --waterType: url(https://i.pinimg.com/originals/0b/60/11/0b60116bc382b1c62a9fe41a61916828.png);
-    --grassBackground: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80ff523f-ff84-457d-a547-464588d3a3d3/df0dwcb-c264fc01-23cf-43e7-b42b-2d3a6a6d565c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgwZmY1MjNmLWZmODQtNDU3ZC1hNTQ3LTQ2NDU4OGQzYTNkM1wvZGYwZHdjYi1jMjY0ZmMwMS0yM2NmLTQzZTctYjQyYi0yZDNhNmE2ZDU2NWMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fSXghpSjeaR409VsfrJnq_dl_imCixcDB_0lmEshSis);
-    --grassType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15338_pokemon_grass_type.png);
-    --electricBackground: url(https://wallpaper.dog/large/5507827.jpg);
-    --electricType: url(https://i.pinimg.com/originals/ae/99/f0/ae99f036a053d152be94b9a825a3c412.png);
-    --psychicBackground: url(https://wallpapercave.com/wp/wp7678061.png);
-    --psychicType: url(https://i.pinimg.com/originals/8a/ae/6c/8aae6c7e5f6606e2f169621675a4b244.png);
-    --iceBackground: url(https://img.freepik.com/premium-photo/natural-texture-winter-ice-blue-ice-as-background_117930-805.jpg?w=2000);
-    --iceType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15326_Pokemon_Ice_Type.png);
-    --dragonBackground: url(https://cdn.thinkdrawart.com/wp-content/uploads/2012/04/Fantasy-Sky-Step3d.jpg);
-    --dragonType: url(https://i.pinimg.com/originals/30/b7/f7/30b7f7d88eed267412049ba49d2cd532.png);
-    --darkBackground: url(https://images.pling.com/img/00/00/61/57/57/1549487/577c4dc30402a8dfa3915867a59e64a89b7b723b9ac219fd677bdd0415563d4f084f.jpg);
-    --darkType: url(https://i.pinimg.com/originals/a2/1c/4a/a21c4a4659cb7c08c4de89c66c4c05f6.png);
-    --fairyBackground: url(https://img.freepik.com/premium-vector/fairy-background-with-rainbow-mesh-trendy-universe-banner-princess-colors-fantasy-gradient-backdrop-with-hologram-holographic-fairy-background-with-magic-sparkles-stars-blurs_121461-687.jpg?w=2000);
-    --fairyType: url(https://i.pinimg.com/originals/80/18/4b/80184bc7a5688df0b568529579fb4661.png);
-    --shadowBackground: url(https://c4.wallpaperflare.com/wallpaper/1017/23/708/gray-black-shadow-surface-wallpaper-thumb.jpg);
-    --shadowType: url(https://logos.flamingtext.com/Name-Logos/Shadow-design-china-name.png);
-    --unknowBackground: url(https://wallpaperaccess.com/full/2902935.jpg);
-    --unknowType: url(https://s3.amazonaws.com/kandipatternspatterns/misc/15321_Pokemon_Mystery_Type.png);
-    transition: 1s;
-    background-color: var(--white);
-}
-body, #dark-mode{
-    --red: rgb(1, 92, 24);
-    --white: rgb(0, 0, 0);
-    --black: rgb(255, 255, 255);
-    transition: 1s;
-    background-color: var(--white);
 }
 ul{
     list-style: none;
@@ -67,23 +83,26 @@ ul{
     color: var(--black);
     min-height: 100vh;
     position: relative;
+    padding-top: 10vh;
 }
 .App_tittle{
     background-color: var(--red);
     padding: 3vh 0;
     position: fixed;
+    top: 0;
     width: 100%;
-    height: 20vh;
+    height: max-content;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
     transition: 1s;
+    min-height: 150px;
 }
 .App_tittle img{
-    height: 10vh;
-    max-width: 45vw;
+    max-width: 1000px;
     min-width: 300px;
+    margin: 0 20px;
 }
 .toggle{
     top: 21vh;
