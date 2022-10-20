@@ -90,15 +90,34 @@
 .move_name{
     margin: 0 10px;
     padding-left: 5px;
-    background-color: var(--red);
     padding: 10px;
     border-radius: 20px;
-}
-.move_name:hover{
     font-weight: bold;
-    scale: 1.1;
-    color: #fff;
-    transition: 0.5s;
+    transition: 1s;
+}
+p#normal,
+p#flying,
+p#steel,
+p#fire,
+p#electric,
+p#ice,
+p#fairy{
+    color: black;
+}
+p#bug,
+p#ground,
+p#water,
+p#grass,
+p#ghost,
+p#poison,
+p#dragon,
+p#rock,
+p#psychic,
+p#fighting{
+    color: var(--white);
+}
+p#dark{
+    color: white;
 }
 img#normal{
     background-image: var(--normalBackground);
@@ -106,11 +125,17 @@ img#normal{
 span#normal{
     background-image: var(--normalType)
 }
+p#normal{
+    background: var(--normalColor)
+}
 img#fighting{
     background-image: var(--fightingBackground);
 }
 span#fighting{
     background-image: var(--fightingType)
+}
+p#fighting{
+    background: var(--fightingColor)
 }
 img#flying{
     background-image: var(--flyingBackground);
@@ -118,11 +143,17 @@ img#flying{
 span#flying{
     background-image: var(--flyingType)
 }
+p#flying{
+    background: var(--flyingColor)
+}
 img#poison{
     background-image: var(--poisonBackground);
 }
 span#poison{
     background-image: var(--poisonType)
+}
+p#poison{
+    background: var(--poisonColor)
 }
 img#ground{
     background-image: var(--groundBackground);
@@ -130,11 +161,17 @@ img#ground{
 span#ground{
     background-image: var(--groundType)
 }
+p#ground{
+    background: var(--groundColor)
+}
 img#bug{
-      background-image: var(--bugBackground);
+    background-image: var(--bugBackground);
 }
 span#bug{
     background-image: var(--bugType)
+}
+p#bug{
+    background: var(--bugColor)
 }
 img#rock{
     background-image: var(--rockBackground);
@@ -142,11 +179,17 @@ img#rock{
 span#rock{
     background-image: var(--rockType)
 }
+p#rock{
+    background: var(--rockColor)
+}
 img#ghost{
     background-image: var(--ghostBackground);
 }
 span#ghost{
     background-image: var(--ghostType)
+}
+p#ghost{
+    background: var(--ghostColor)
 }
 img#steel{
     background-image: var(--steelBackground);
@@ -154,11 +197,17 @@ img#steel{
 span#steel{
     background-image: var(--steelType)
 }
+p#steel{
+    background: var(--steelColor)
+}
 img#fire{
     background-image: var(--fireBackground);
 }
 span#fire{
     background-image: var(--fireType)
+}
+p#fire{
+    background: var(--fireColor)
 }
 img#water{
     background-image: var(--waterBackground);
@@ -166,11 +215,17 @@ img#water{
 span#water{
     background-image: var(--waterType)
 }
+p#water{
+    background: var(--waterColor)
+}
 img#grass{
     background-image: var(--grassBackground);
 }
 span#grass{
     background-image: var(--grassType)
+}
+p#grass{
+    background: var(--grassColor)
 }
 img#electric{
     background-image: var(--electricBackground);
@@ -178,11 +233,17 @@ img#electric{
 span#electric{
     background-image: var(--electricType)
 }
+p#electric{
+    background: var(--electricColor)
+}
 img#psychic{
     background-image: var(--psychicBackground);
 }
 span#psychic{
     background-image: var(--psychicType)
+}
+p#psychic{
+    background: var(--psychicColor)
 }
 img#ice{
     background-image: var(--iceBackground);
@@ -190,11 +251,17 @@ img#ice{
 span#ice{
     background-image: var(--iceType)
 }
+p#ice{
+    background: var(--iceColor)
+}
 img#dragon{
     background-image: var(--dragonBackground);
 }
 span#dragon{
     background-image: var(--dragonType)
+}
+p#dragon{
+    background: var(--dragonColor)
 }
 img#dark{
     background-image: var(--darkBackground);
@@ -202,11 +269,17 @@ img#dark{
 span#dark{
     background-image: var(--darkType)
 }
+p#dark{
+    background: var(--darkColor)
+}
 img#fairy{
     background-image: var(--fairyBackground);
 }
 span#fairy{
     background-image: var(--fairyType)
+}
+p#fairy{
+    background: var(--fairyColor)
 }
 img#shadow{
     background-image: var(--shadowBackground);

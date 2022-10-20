@@ -64,13 +64,17 @@ const PokemonId = () => {
       </div>
       <section className='moves'>
         <h1 className='move_title'>Moves</h1>
-        <ul className='move_list'>
+        <div className='move_list'>
           {
             pokemon?.moves.map(move => (
-              <li className='move_name' key={move.move.name}>{move.move.name}</li>
+              <p 
+                className='move_name' 
+                key={move.move.name}
+                id={pokemon?.types[0].type.name}
+              >{move.move.name}</p>
             ))
           }
-        </ul>
+        </div>
       </section>
     </div>
   )
